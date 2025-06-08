@@ -14,6 +14,5 @@ import pandas as pd
 data = pd.read_csv('iris_data.csv')
 
 import plotly.express as px
-fig = px.scatter(data, x="Sepa1LengthCm", y="Sepa1WidthCm", color="Species",
-                 size="Sepa1LengthCm", hover_data=["Sepa1WidthCm"])
+fig = px.scatter(data, x="SepalLengthCm", y="SepalWidthCm", color="Species")
 st.plotly_chart(fig, use_container_width=True)
